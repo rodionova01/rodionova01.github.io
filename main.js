@@ -4,9 +4,9 @@ import {search} from "./search.js"
 
 
 const initialState = [
-    [8, 4, 2],
-    [7, 3, 5],
-    [1, 0, 6]]
+    [1, 4, 3],
+    [7, 2, 5],
+    [8, 0, 6]]
 
 let s1 = initialState
 new GameView(s1)
