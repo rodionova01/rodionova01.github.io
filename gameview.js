@@ -1,4 +1,4 @@
- const canvas = document.querySelector('#canvas')
+export const canvas = document.querySelector('#canvas')
 const ctx = canvas.getContext('2d')
 const d = 3
 const tileWidth = canvas.width / d
@@ -50,4 +50,11 @@ export class GameView
             }
         }
     }
+}
+
+export function clickToTail(x, y)
+{
+    const j = Math.floor(x / tileWidth)
+    const i = Math.floor(y / tileHeight)
+    return [i,j]
 }
